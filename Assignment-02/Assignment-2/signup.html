@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #fff;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+        }
+        h2 {
+            text-align: left;
+        }
+        .section {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section img {
+            width: 40px;
+            height: 40px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .buttons button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .create {
+            background: #fff;
+            border: 1px solid #000;
+        }
+        .login {
+            background: black;
+            color: white;
+        }
+        .social {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .social div {
+            width: 48%;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .social img {
+            width: 50px;
+        }
+        .footer {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up / Login</h2>
+        <p>Welcome!<br>Sign up or log in to your account</p>
+        
+        <div class="section">
+            <img src="create.jpg" alt="Create Account">
+            <div>
+                <strong>Create Account</strong>
+                <p>Join us by creating a new account with your information</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="login.jpg" alt="Log In">
+            <div>
+                <strong>Log In</strong>
+                <p>Already have an account? Log in to access your profile</p>
+            </div>
+        </div>
+        
+        <input type="email" placeholder="Enter your email address">
+        <input type="password" placeholder="Enter your password">
+        
+        <div class="buttons">
+            <button class="create">Create Account</button>
+            <button class="login">Log In</button>
+        </div>
+        
+        <p><strong>Join Us Today!</strong><br>New to the community? Sign up now</p>
+        
+        <h3>Sign Up with</h3>
+        <div class="social">
+            <div>
+                <img src="google.jpg" alt="Google">
+                <p>Join with Google</p>
+            </div>
+            <div>
+                <img src="facebook.jpg" alt="Facebook">
+                <p>Join with Facebook</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <span>😊 Home</span>
+            <span>🔒Privacy Policy</span>
+        </div>
+    </div>
+</body>
+</html>

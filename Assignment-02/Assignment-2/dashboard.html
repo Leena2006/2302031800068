@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comics Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #fff;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+        }
+        .profile {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .menu div {
+            text-align: center;
+            width: 18%;
+        }
+        .menu img {
+            width: 40px;
+            height: 40px;
+        }
+        .comics-section, .posts-section, .stats-section {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .comics, .posts, .stats {
+            display: flex;
+            justify-content: space-between;
+        }
+        .comic, .post, .stat {
+            width: 48%;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .comic img, .post img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .buttons button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .browse {
+            background: #fff;
+            border: 1px solid #000;
+        }
+        .create {
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to your Comics Dashboard</h2>
+        
+        <div class="profile">
+            <img src="user.png" alt="User">
+            <div>
+                <strong>[User]</strong>
+                <p>Dashboard</p>
+            </div>
+        </div>
+        
+        <div class="menu">
+            <div>
+                <!-- <img src="dashboard-icon.png" alt="Dashboard"> -->
+                <p>Dashboard</p>
+            </div>
+            <div>
+                <!-- <img src="my-comics-icon.png" alt="My Comics"> -->
+                <p>My Comics</p>
+            </div>
+            <div>
+                <!-- <img src="create-icon.png" alt="Create Comic"> -->
+                <p>Create Comic</p>
+            </div>
+            <div>
+                <!-- <img src="explore-icon.png" alt="Explore"> -->
+                <p>Explore</p>
+            </div>
+            <div>
+                <!-- <img src="settings-icon.png" alt="Settings"> -->
+                <p>Settings</p>
+            </div>
+        </div>
+        
+        <div class="comics-section">
+            <h3>Recent Comics</h3>
+            <div class="comics">
+                <div class="comic">
+                    <img src="comic1.png" alt="Comic 1">
+                    <strong>Comic Title</strong>
+                    <p>Some Data</p>
+                </div>
+                <div class="comic">
+                    <img src="comic2.png" alt="Comic 2">
+                    <strong>Comic Title</strong>
+                    <p>Some Data</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="browse">Browse Templates</button>
+                <button class="create">Create New Comic</button>
+            </div>
+        </div>
+        
+        <div class="posts-section">
+            <h3>Recent Posts</h3>
+            <div class="posts">
+                <div class="post">
+                    <img src="post1.png" alt="Post 1">
+                    <p>Check out this amazing comic!</p>
+                    <span>#funny #superhero</span>
+                    <p>Friend</p>
+                </div>
+                <div class="post">
+                    <img src="post2.png" alt="Post 2">
+                    <p>New comic series coming soon!</p>
+                    <span>#exciting #art</span>
+                    <p>Artist</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stats-section">
+            <h3>Your Stats</h3>
+            <div class="stats">
+                <div class="stat">
+                    <p><strong>Total Comics Created</strong></p>
+                    <p>25</p>
+                    <p>+5 from last month</p>
+                </div>
+                <div class="stat">
+                    <p><strong>Total Readers</strong></p>
+                    <p>1000</p>
+                    <p>+200 from last month</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

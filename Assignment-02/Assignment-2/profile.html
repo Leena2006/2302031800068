@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 10px;
+            background: #fff;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .input-field, .button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+        .options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .option-card {
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .subscription {
+            margin-top: 20px;
+        }
+        .subscription-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">&#8592; Profile Settings</div>
+        <div class="profile">
+            <img src="user.png" alt="User">
+            <div>
+                <div><strong>User's Name</strong></div>
+                <div style="font-size: 12px; color: gray;">Manage your preferences</div>
+            </div>
+        </div>
+        <input type="text" class="input-field" placeholder="Upload new profile picture">
+        <input type="text" class="input-field" placeholder="Enter your new name">
+        <div class="options">
+            <div class="option-card">Account Settings</div>
+            <div class="option-card">Subscription Plan</div>
+            <div class="option-card">Delete Account</div>
+        </div>
+        <input type="email" class="input-field" placeholder="Enter new email address">
+        <input type="password" class="input-field" placeholder="Enter new password">
+        <div class="options">
+            <div class="button" style="background:#ddd; color:black;">Enable</div>
+            <div class="button">Disable</div>
+        </div>
+        <div class="button">Save Changes</div>
+        <div class="subscription">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <strong>Choose a Subscription Plan</strong>
+                <span style="font-size: 12px;">Select Plan &#9662;</span>
+            </div>
+            <div style="font-size: 12px; color: gray;">Upgrade or downgrade your plan</div>
+            <div class="subscription-card">
+                <div>
+                    <img src="premium.png" width="50">
+                    <div><strong>Premium</strong></div>
+                    <div>$9.99/month</div>
+                </div>
+                <div>
+                    <img src="basic.png" width="50">
+                    <div><strong>Basic</strong></div>
+                    <div>$4.99/month</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

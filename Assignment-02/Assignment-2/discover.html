@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Comics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .icons-container, .tags-container, .comics-container, .creations-container {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+        }
+        .icon, .tag, .comic-card, .creation-card {
+            background: #f8f8f8;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            min-width: 100px;
+        }
+        .comic-card img, .creation-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .follow-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: black;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>Discover Comics</h2>
+            <div class="icons-container">
+                <div class="icon">🔥 Trending</div>
+                <div class="icon">🆕 New</div>
+                <div class="icon">⭐ Popular</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Categories/Tags</h2>
+            <div class="tags-container">
+                <div class="tag">Sci-Fi</div>
+                <div class="tag">Adventure</div>
+                <div class="tag">Action</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Comic Picks</h2>
+            <div class="comics-container">
+                <div class="comic-card">
+                    <img src="comic1.png" alt="Comic 1">
+                    <p>Power Heroes<br>Issue #1</p>
+                </div>
+                <div class="comic-card">
+                    <img src="comic2.png" alt="Comic 2">
+                    <p>Space Adventures<br>Issue #3</p>
+                </div>
+                <div class="comic-card">
+                    <img src="comic3.png" alt="Comic 3">
+                    <p>Mystery Tales<br>Issue #5</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Latest Creations</h2>
+            <div class="creations-container">
+                <div class="creation-card">
+                    <img src="creation1.png" alt="Creation 1">
+                    <p>Exciting new storyline! #Comics #Adventure</p>
+                </div>
+                <div class="creation-card">
+                    <img src="creation2.png" alt="Creation 2">
+                    <p>Artwork teaser for upcoming series! #Illustration</p>
+                </div>
+            </div>
+            <div class="follow-btn">Follow</div>
+        </div>
+
+        <div class="section">
+            <h2>Creators to Follow</h2>
+            <p>🎨 ArtSketcher85 - Sci-Fi Illustrator</p>
+            <p>🖌️ InkSplatter99 - Fantasy Artist</p>
+            <p>📖 StoryWeaver77 - Comic Writer</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>🏠 Home</div>
+        <div>🔍 Search</div>
+    </div>
+</body>
+</html>

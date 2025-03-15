@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Comics Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #fff;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+        }
+        h2 {
+            text-align: left;
+        }
+        .view-options {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .option {
+            width: 48%;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .option img {
+            width: 30px;
+            height: 30px;
+        }
+        .comic-cards {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .comic {
+            width: 48%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            background: #fff;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .comic img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .new-comic-btn {
+            width: 100%;
+            padding: 10px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .reviews, .posts {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .review, .post {
+            width: 48%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            background: #fff;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .review img, .post img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>My Comics Library</h2>
+        <div class="view-options">
+            <div class="option">
+                <img src="grid-view.png" alt="Grid View">
+                <p>Grid View</p>
+            </div>
+            <div class="option">
+                <img src="list-view.png" alt="List View">
+                <p>List View</p>
+            </div>
+        </div>
+        
+        <h3>Comic Cards</h3>
+        <div class="comic-cards">
+            <div class="comic">
+                <img src="comic10.jpg" alt="Comic 1">
+                <p><strong>Comic 1</strong></p>
+                <p>View, Edit, Share, Delete</p>
+            </div>
+            <div class="comic">
+                <img src="comic11.jpg" alt="Comic 2">
+                <p><strong>Comic 2</strong></p>
+                <p>View, Edit, Share, Delete</p>
+            </div>
+        </div>
+        <button class="new-comic-btn">+ New Comic</button>
+        
+        <h3>Comic Reviews</h3>
+        <div class="reviews">
+            <div class="review">
+                <img src="user.png" alt="User 123">
+                <p><strong>User123</strong> ⭐⭐⭐⭐⭐</p>
+                <p>Great comic!</p>
+            </div>
+            <div class="review">
+                <img src="user.png" alt="ComicsFan">
+                <p><strong>ComicsFan</strong> ⭐⭐⭐⭐⭐</p>
+                <p>Fantastic storytelling.</p>
+            </div>
+        </div>
+        
+        <h3>Latest Posts</h3>
+        <div class="posts">
+            <div class="post">
+                <img src="post1.png" alt="Latest Comic">
+                <p><strong>Exciting new comic release!</strong></p>
+                <p>ComicArtist1</p>
+            </div>
+            <div class="post">
+                <img src="post2.png" alt="Upcoming Comic">
+                <p><strong>Can't wait to read this comic!</strong></p>
+                <p>SuperReader</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

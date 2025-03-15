@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Detail Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+        }
+        .header {
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .creator {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .creator img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .panel {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+            background: #fff;
+        }
+        .panel img {
+            width: 60px;
+            height: 60px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .btn-comment {
+            background: #fff;
+            border: 1px solid black;
+        }
+        .btn-like {
+            background: black;
+            color: white;
+        }
+        .comments {
+            display: flex;
+            justify-content: space-between;
+        }
+        .comment-box {
+            width: 48%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: left;
+            background: #fff;
+        }
+        .comment-box img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">&#x2190; Comic Detail Page</div>
+        
+        <div class="creator">
+            <img src="creator.png" alt="Creator">
+            <div>
+                <strong>Comic Creator Name</strong><br>
+                Illustrator | Writer
+            </div>
+        </div>
+        
+        <h3>Comic Title</h3>
+        <button class="btn">Share Comic ➝</button>
+        
+        <div class="panel">
+            <img src="panel1.png" alt="Panel 1">
+            <div>
+                <strong>Panel 1</strong><br>
+                Action<br>
+                Comic panel description
+            </div>
+        </div>
+        <div class="panel">
+            <img src="panel2.png" alt="Panel 2">
+            <div>
+                <strong>Panel 2</strong><br>
+                Funny<br>
+                Comic panel description
+            </div>
+        </div>
+        <div class="panel">
+            <img src="panel3.png" alt="Panel 3">
+            <div>
+                <strong>Panel 3</strong><br>
+                Adventure<br>
+                Comic panel description
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button class="btn btn-comment">Comment</button>
+            <button class="btn btn-like">Like</button>
+        </div>
+        
+        <h3>User Comments</h3>
+        <div class="comments">
+            <div class="comment-box">
+                <img src="comment1.png" alt="Comment 1">
+                <p><strong>Great comic!</strong></p>
+                <p>Exciting</p>
+                <p>👍 User1</p>
+            </div>
+            <div class="comment-box">
+                <img src="comment2.png" alt="Comment 2">
+                <p><strong>Loved the story!</strong></p>
+                <p>Amazing</p>
+                <p>👍 User2</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
