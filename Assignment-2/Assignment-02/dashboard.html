@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comics Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            max-width: 1000px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            background: black;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .menu div {
+            text-align: center;
+            cursor: pointer;
+        }
+        .menu img {
+            width: 40px;
+            height: 40px;
+            display: block;
+            margin: auto;
+        }
+        .projects, .suggested {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .details {
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            background: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .profile img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Comics Dashboard</h2>
+        <div class="menu">
+            <div><img src="icon1.png" alt="Create"><br>Create New Comic</div>
+            <div><img src="icon2.png" alt="My Comics"><br>My Comics</div>
+            <div><img src="icon3.png" alt="Explore"><br>Explore</div>
+        </div>
+        <div class="projects">
+            <h3>Recent Projects</h3>
+            <div class="image-container">
+                <img src="project1.png" alt="Recent Project">
+            </div>
+            <div class="details">
+                <strong>Project Name</strong><br>
+                Date Created
+            </div>
+        </div>
+        <div class="suggested">
+            <h3>Suggested Comics</h3>
+            <div class="image-container">
+                <img src="project2.png" alt="Suggested Comic">
+            </div>
+            <div class="details">
+                <strong>Comic Title</strong><br>
+                Author
+            </div>
+        </div>
+        <div class="profile">
+            <img src="user.png" alt="User">
+            <span><strong>Username</strong></span>
+        </div>
+    </div>
+</body>
+</html>

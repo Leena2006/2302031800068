@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 95%;
+            margin: auto;
+            max-width: 1000px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+        }
+        .account-settings, .theme-selection {
+            margin-top: 20px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .option {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .theme-options {
+            display: flex;
+            gap: 10px;
+        }
+        .theme-option {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background: white;
+            cursor: pointer;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 15px;
+            width: 48%;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid black;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button.save {
+            background: black;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">⚙️ Settings</div>
+        
+        <div class="account-settings">
+            <div class="section-title">Account Settings</div>
+            <div class="option">Change Email</div>
+            <div class="option">Change Password</div>
+        </div>
+        
+        <div class="theme-selection">
+            <div class="section-title">Theme Selection</div>
+            <div class="theme-options">
+                <div class="theme-option">🌞 Light Mode</div>
+                <div class="theme-option">🌙 Dark Mode</div>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <div class="button">Cancel</div>
+            <div class="button save">Save Changes</div>
+        </div>
+    </div>
+</body>
+</html>

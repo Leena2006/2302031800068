@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 95%;
+            margin: auto;
+            max-width: 1200px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            background: black;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .toolbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background: white;
+            border-bottom: 1px solid #ddd;
+        }
+        .toolbar div {
+            text-align: center;
+        }
+        .assets, .settings {
+            display: inline-block;
+            width: 30%;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            background: white;
+            border: 1px solid #ddd;
+            margin: 5px;
+        }
+        .assets img, .settings img {
+            display: block;
+            margin: auto;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .item img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .button-group div {
+            flex: 1;
+            padding: 10px;
+            background: black;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            background: white;
+        }
+        .footer div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Comic Editor</h2>
+        <div class="toolbar">
+            <div class="assets">
+                <img src="assets-icon.png" alt="Assets">
+                <p>Assets</p>
+            </div>
+            <div class="assets">
+                <img src="canvas-icon.png" alt="Canvas">
+                <p>Canvas</p>
+            </div>
+            <div class="settings">
+                <img src="settings-icon.png" alt="Settings">
+                <p>Settings</p>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Character Assets</h3>
+            <div class="item">
+                <img src="character1.png" alt="Character 1">
+                <p>Character 1</p>
+            </div>
+            <div class="item">
+                <img src="character2.png" alt="Character 2">
+                <p>Character 2</p>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Background Assets</h3>
+            <div class="item">
+                <img src="background1.png" alt="Background 1">
+                <p>Background 1</p>
+            </div>
+            <div class="item">
+                <img src="background2.png" alt="Background 2">
+                <p>Background 2</p>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Speech Bubbles</h3>
+            <div class="button-group">
+                <div>Bubble 1</div>
+                <div>Bubble 2</div>
+            </div>
+        </div>
+        <div class="button-group">
+            <div>Color</div>
+            <div>Layers</div>
+            <div>Text Options</div>
+        </div>
+        <div class="footer">
+            <div>
+                <img src="undo-icon.png" alt="Undo">
+                <p>Undo</p>
+            </div>
+            <div>
+                <img src="redo-icon.png" alt="Redo">
+                <p>Redo</p>
+            </div>
+            <div>
+                <img src="save-icon.png" alt="Save">
+                <p>Save</p>
+            </div>
+            <div>
+                <img src="export-icon.png" alt="Export">
+                <p>Export</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
